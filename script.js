@@ -12,31 +12,31 @@ var specialString = "!@#$%^&*()"
 var specialArray = specialString.split("")
 
 function askForOptions() {
-  var length = parseInt(prompt("how long?"));
+  var length = parseInt(prompt("How long would you like the password to be?"));
 
   if(isNaN(length) === true) {
-    alert("please enter a number");
+    alert("Please enter a number between 8-128.");
     return;
   }
   if(length < 8) {
-    alert("please enter a number higher than 8");
+    alert("Please enter a number higher than 8.");
     return;
   }
   if(length > 128) {
-    alert("please enter a number less than 128");
+    alert("Please enter a number less than 128.");
     return;
   }
 
 
   
 
- var isNum = confirm("add numbers?");
- var isLower = confirm("add lower?");
- var isUpper = confirm("add Upper?");
- var isSpecial= confirm("add special?");
+ var isNum = confirm("Add numbers to the password?");
+ var isLower = confirm("Add lowercase letters to the password?");
+ var isUpper = confirm("Add uppercase letters to the password?");
+ var isSpecial= confirm("Add specia characters to the password?");
 
  if(isNum === false && isLower === false && isUpper === false && isSpecial === false) {
-   alert("Please select one character type")
+   alert("Please select one character type.")
  }
 
  var options = {
