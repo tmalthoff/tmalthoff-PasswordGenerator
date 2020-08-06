@@ -1,1 +1,2 @@
 # tmalthoff-PasswordGenerator
+For this project I used the the code given to me to create a password generator that uses upper, lowercase, numbers, and special characters to create a randomly generated password that will deliver a password between 8 and 128 characters based on the users selection.
